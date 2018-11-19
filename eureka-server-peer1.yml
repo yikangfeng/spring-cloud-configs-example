@@ -1,5 +1,5 @@
 server:
-  port: 1111
+  port: 7080
 
 spring:
   application:
@@ -12,9 +12,9 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-#      defaultZone: http://localhost:1111/eureka/
-#      defaultZone: http://localhost:1112/eureka/ # 此处改为第二个eureka-server地址
-      defaultZone: http://localhost:1112/eureka/,http://localhost:1113/eureka/ # 此处改为包含三个eureka-server
+      defaultZone: http://localhost:7081/eureka/
+#      defaultZone: http://localhost:7082/eureka/ # 此处改为第二个eureka-server地址
+#      defaultZone: http://localhost:7081/eureka/,http://localhost:7082/eureka/ # 此处改为包含三个eureka-server
   server:
       waitTimeInMsWhenSyncEmpty: 0
       enableSelfPreservation: false
